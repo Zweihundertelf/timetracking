@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="de">
+<html lang="de" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -8,11 +8,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>
-        <a href="/auth/register">Register</a>
-    </h2>
-    <h2>
-        <a href="/auth/login">Login</a>
-    </h2>
+    <h1>Personal Page</h1>
+
+    <span th:text="${userLogin}"></span>
 </body>
 </html>
